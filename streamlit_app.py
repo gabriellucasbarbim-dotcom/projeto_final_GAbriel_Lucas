@@ -93,7 +93,7 @@ with st.sidebar:
 
         "Escolha uma página:",
 
-        ["Início", "Sobre", "Contato"]
+        ["Início", "Sobre mim", "Entre em  Contato"]
 
     )
 
@@ -141,7 +141,7 @@ if pagina == "Início":
 # ==========================================
 
 
-elif pagina == "Sobre":
+elif pagina == "Sobre mim":
 
 
     st.header("Sobre o meu projeto ")
@@ -151,9 +151,9 @@ elif pagina == "Sobre":
 
     st.write(
 
-        "Este projeto foi desenvolvido para falar sobre o Gabriel  "
+        "Este projeto foi desenvolvido para falar sobre o Gabriel Lucas e vocês conhecerem bem ele"
 
-        "Ele é uma pessoa muito Legal e companheira."
+        "Ele é uma pessoa muito Legal e companheira Ele tem 14 Anos e é cristão. Jesus te ama."
 
     )
 
@@ -163,14 +163,14 @@ elif pagina == "Sobre":
 
     st.write(
 
-        "O objetivo é você conhecer maus o Gabriel  "
+        "O objetivo é você conhecer mais o Gabriel  "
 
-        "ele foi desenvolvido para o Gabriel mostrar a suas habilidades ."
+        "ele foi desenvolvido para o Gabriel mostrar o gosto dele para vocês  ."
 
     )
 
 
-    st.subheader("Sobre o autpr")
+    st.subheader("Sobre o autor")
 
 
     st.write(
@@ -199,10 +199,10 @@ elif pagina == "Contato":
     with st.form("formulario_contato"):
 
 
-        nome = st.text_input("Gabriel Lucas ")
+        nome = st.text_input("Nome:")
 
 
-        email = st.text_input("gabriellucas.barbim")
+        email = st.text_input("Seu Email")
 
 
         mensagem = st.text_area("Tenho uma duvida")
