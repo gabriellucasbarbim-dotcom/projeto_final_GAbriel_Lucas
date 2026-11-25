@@ -132,35 +132,9 @@ if pagina == "Início":
     )
 
 
-    st.subheader("Publicações")
+    
 
-
-    # Campo de pesquisa
-
-    pesquisa = st.text_input("Pesquisar publicações:")
-
-
-    for post in POSTS:
-
-
-        # Verifica se a publicação corresponde à pesquisa
-
-        if pesquisa.lower() in post["titulo"].lower():
-
-
-            with st.container(border=True):
-
-
-                st.image(post["imagem"], use_container_width=True)
-
-
-                st.subheader(post["titulo"])
-
-
-                st.caption("Publicado por: " + post["autor"])
-
-
-                st.write(post["texto"])
+                
 
 
 # ==========================================
@@ -173,38 +147,38 @@ if pagina == "Início":
 elif pagina == "Sobre":
 
 
-    st.header("Sobre o projeto")
+    st.header("Sobre o meu projeto ")
 
 
     # ALTERE as informações abaixo
 
     st.write(
 
-        "Este projeto foi desenvolvido como atividade final "
+        "Este projeto foi desenvolvido para falar sobre o Gabriel  "
 
-        "do Curso de Programação Web para Meninas."
-
-    )
-
-
-    st.subheader("Objetivo")
-
-
-    st.write(
-
-        "Apresente aqui o objetivo do seu projeto "
-
-        "e explique para quem ele foi desenvolvido."
+        "Ele é uma pessoa muito Legal e companheira."
 
     )
 
 
-    st.subheader("Sobre a autora")
+    st.subheader("O objetivo ")
 
 
     st.write(
 
-        "Meu nome é SEU NOME e este é o meu projeto."
+        "O objetivo é você conhecer maus o Gabriel  "
+
+        "ele foi desenvolvido para o Gabriel mostrar a suas habilidades ."
+
+    )
+
+
+    st.subheader("Sobre o autpr")
+
+
+    st.write(
+
+        "Meu nome é Gabriel Lucas e esse é o meu projeto."
 
     )
 
@@ -222,19 +196,19 @@ elif pagina == "Contato":
     st.header("Entre em contato")
 
 
-    st.write("Preencha os campos abaixo.")
+    st.write("amiga o processo.")
 
 
     with st.form("formulario_contato"):
 
 
-        nome = st.text_input("Nome")
+        nome = st.text_input("Gabriel Lucas ")
 
 
-        email = st.text_input("E-mail")
+        email = st.text_input("gabriellucas.barbim")
 
 
-        mensagem = st.text_area("Mensagem")
+        mensagem = st.text_area("Tenho uma duvida")
 
 
         enviar = st.form_submit_button("Enviar mensagem")
@@ -278,7 +252,7 @@ st.divider()
 
 st.caption(
 
-    f"© {datetime.now().year} | Desenvolvido por SEU NOME"
+    f"© {datetime.now().year} | Desenvolvido por Gabriel Lucas"
 
 )
 
