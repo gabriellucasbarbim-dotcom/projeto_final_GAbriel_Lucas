@@ -82,8 +82,6 @@ DESCRICAO = "Este aqui é o meu projeto final, que vai falar sobre mim."
 
 POSTS
 
-    {
-
         "titulo": "Minhas coisas favorita",
 
         "autor": "Gabriel Lucas",
