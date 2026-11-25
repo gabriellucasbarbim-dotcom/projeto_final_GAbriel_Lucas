@@ -89,7 +89,7 @@ dados ={
         "texto": "Eu gosto muito de jogar futebol e de jogar videogame"
 
     },
-=[
+minhas_coisas = [
     {
 
         "titulo": "O que eu gosto de comer",
