@@ -1,3 +1,44 @@
+import os
+import json
+import streamlit as st
+from datetime import datetime
+from google.cloud import firestore
+from google.oauth2 import service_account
+
+
+
+# ==========================================
+# CONEXÃO COM O FIREBASE
+# ==========================================
+
+@st.cache_resource
+def conectar_firebase():
+    dados = json.loads(os.environ["FIREBASE_CREDENTIALS"])
+    credenciais = service_account.Credentials.from_service_account_info(dados)
+    return firestore.Client(
+        credentials=credenciais,
+        project=dados["project_id"]
+    )
+
+
+# ==========================================
+# FORMULÁRIO DE CONTATO
+# ==========================================
+
+st.header("📬 Contato")
+
+with st.form("form_contato", clear_on_submit=True):
+    nome = st.text_input("Nome")
+    email = st.text_input("E-mail")
+    mensagem = st.text_area("Mensagem")
+    enviar = st.form_submit_button("Enviar mensagem")
+
+    if enviar:
+        if nome and email and mensagem:
+            db = conectar_firebase()
+
+            
+
 import streamlit as st
 
 from datetime import datetime
