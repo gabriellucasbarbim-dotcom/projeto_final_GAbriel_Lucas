@@ -153,7 +153,7 @@ elif pagina == "Sobre mim":
 
         "Este projeto foi desenvolvido para falar sobre o Gabriel Lucas e vocês conhecerem bem ele"
 
-        "Ele é uma pessoa muito Legal e companheira Ele tem 14 Anos e é cristão. Jesus te ama."
+        "Ele é uma pessoa muito Legal e companheira, Ele tem 14 Anos e é cristão. Jesus te ama."
 
     )
 
