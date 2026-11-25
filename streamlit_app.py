@@ -114,7 +114,7 @@ minhas_coisas = [
 
 st.title("Projeto Final de Gabriel Lucas")
 
-st.write(O que o Gabriel Gosta)
+st.write("O que o Gabriel Gosta")
 
 st.divider()
 
