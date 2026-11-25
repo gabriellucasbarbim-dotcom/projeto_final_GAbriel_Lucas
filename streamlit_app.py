@@ -39,7 +39,6 @@ DESCRICAO = "Este aqui é o meu projeto final, que vai falar sobre mim."
 
 # ALTERE os textos e imagens das publicações
 
-POSTS
 dados ={
         "titulo": "Minhas coisas favorita",
 
