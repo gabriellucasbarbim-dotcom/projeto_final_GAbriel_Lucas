@@ -112,7 +112,7 @@ minhas_coisas = [
 # ==========================================
 
 
-st.title(Projeto Final de Gabriel Lucas)
+st.title("Projeto Final de Gabriel Lucas")
 
 st.write(O que o Gabriel Gosta)
 
